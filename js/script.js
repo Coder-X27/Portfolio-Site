@@ -1,46 +1,64 @@
 // NAVBAR TOOGLE
-const navMenu=document.getElementById('nav-menu'),
-    navToggle=document.getElementById('nav-toggle'),
-    navClose=document.getElementById('nav-close');
+const navMenu = document.getElementById('nav-menu'),
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close');
 
-if(navToggle){
-    navToggle.addEventListener('click',()=>{
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
-if(navClose){
-    navClose.addEventListener('click',()=>{
-       navMenu.classList.remove('show-menu') 
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
     })
 }
 
-const navLink=document.querySelectorAll('.nav_link')
+const navLink = document.querySelectorAll('.nav_link')
 
-function linkAction(){
-    const navMenu=document.getElementById('nav-menu')
+function linkAction() {
+    const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
 }
-navLink.forEach(n=>n.addEventListener('click',linkAction))
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
 // SKILLS SECTION 
 
-const skillsContent=document.getElementByClassName('skills_content'),
-skillsHeader=document.querySelectorAll('.skills_header')
+const skillsContent = document.getElementByClassName('skills_content'),
+    skillsHeader = document.querySelectorAll('.skills_header')
 
-function toggleSkills(){
-    let itemClass=this.parentNode.className
-    for(i=0;i<skillsContent.length;i++){
+function toggleSkills() {
+    let itemClass = this.parentNode.className
+    for (i = 0; i < skillsContent.length; i++) {
         console.log(i)
-        skillsContent[i].className='skills_content skills_close'
+        skillsContent[i].className = 'skills_content skills_close'
     }
-    if(itemClass === 'skills_content skills_close'){
-        this.parentNode.className='skills_content skills_open'
+    if (itemClass === 'skills_content skills_close') {
+        this.parentNode.className = 'skills_content skills_open'
     }
 }
 
 skillsHeader.forEach((el) => {
-    el.addEventListener('click',toggleSkills)
+    el.addEventListener('click', toggleSkills)
     console.log(el)
 });
 
+// QUALIFICATION SECTION
 
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('q_active')
+        })
+        target.classList.add('q_active')
+        tab.forEach(tab => {
+            tab.classList.remove('q_active')
+        })
+        tab.classList.add('q_active')
+    })
+})
