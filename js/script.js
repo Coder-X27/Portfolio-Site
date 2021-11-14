@@ -24,8 +24,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 // SKILLS SECTION 
 
-const skillsContent = document.getElementByClassName('skills_content'),
-    skillsHeader = document.querySelectorAll('.skills_header')
+const skillsContent = document.getElementsByClassName('skills_content')
+const skillsHeader = document.querySelectorAll('.skills_header')
 
 function toggleSkills() {
     let itemClass = this.parentNode.className
@@ -45,8 +45,8 @@ skillsHeader.forEach((el) => {
 
 // QUALIFICATION SECTION
 
-const tabs = document.querySelectorAll('[data-target]'),
-    tabContents = document.querySelectorAll('[data-content]')
+const tabs = document.querySelectorAll('[data-target]')
+const tabContents = document.querySelectorAll('[data-content]')
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
