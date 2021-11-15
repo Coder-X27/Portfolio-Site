@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
     --header-height: 3rem;
-    --hue-color: 142;
+    --hue-color: 231;
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -679,4 +679,34 @@ j.skills_title {
 .active-modal {
     opacity: 1;
     visibility: visible;
+}
+
+
+/* PORTFOLIO SECTION  */
+
+.portfolio_container {
+    overflow: initial;
+}
+
+.portfolio_content {
+    padding: 0 1.5rem;
+}
+
+.portfolio_img {
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio_title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_description {
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button_icon {
+    transform: translateX(.25rem);
 }
