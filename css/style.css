@@ -269,7 +269,7 @@ img {
 }
 
 .home_scroll {
-    /* display: none; */
+    display: none;
 }
 
 .home_scroll-button {
@@ -317,6 +317,15 @@ img {
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
     transition: .3s;
+}
+
+.button-white {
+    background-color: #fff;
+    color: var(--first-color);
+}
+
+.button-white:hover {
+    background-color: #fff;
 }
 
 .button--flex {
@@ -703,10 +712,9 @@ j.skills_title {
     margin-bottom: var(--mb-0-5);
 }
 
-
-/* .portfolio_description {
+.portfolio_description {
     margin-bottom: var(--mb-0-75);
-} */
+}
 
 .portfolio_button {
     margin-bottom: var(--mb-0-75);
@@ -714,4 +722,35 @@ j.skills_title {
 
 .portfolio_button:hover .button_icon {
     transform: translateX(.25rem);
+}
+
+
+/* PROJECT SECTION  */
+
+.project {
+    text-align: center;
+}
+
+.project_bg {
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+}
+
+.project_title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.project_description {
+    margin-bottom: var(--mb-1-5);
+}
+
+.project_title,
+.project_description {
+    color: white;
+}
+
+.project_img {
+    width: 232px;
+    justify-self: center;
 }
