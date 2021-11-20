@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
     --header-height: 3rem;
-    --hue-color: 231;
+    --hue-color: 130;
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -866,7 +866,7 @@ j.skills_title {
 }
 
 .footer_bg {
-    background-color: var(--first-color);
+    background-color: var(--first-color-second);
     padding: 2rem 0 3rem;
 }
 
