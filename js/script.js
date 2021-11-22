@@ -13,7 +13,7 @@ if (navClose) {
         navMenu.classList.remove('show-menu')
     })
 }
-
+// SHOW MENU 
 const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction() {
@@ -127,7 +127,7 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp)
 
-// dark light theme
+// DARK LIGHT THEME
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
