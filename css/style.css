@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
     --header-height: 3rem;
-    --hue-color: 260;
+    --hue-color: 226;
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
@@ -509,47 +509,43 @@ j.skills_title {
 }
 
 .skills_html {
-    width: 90%;
+    width: 95%;
 }
 
 .skills_css {
-    width: 80%;
-}
-
-.skills_javascript {
-    width: 60%;
-}
-
-.skills_react {
     width: 85%;
 }
 
-.skills_node {
-    width: 90%;
+.skills_javascript {
+    width: 75%;
 }
 
-.skills_php {
+.skills_react {
+    width: 65%;
+}
+
+.skills_pygame {
     width: 80%;
 }
 
-.skills_firebase {
-    width: 60%;
-}
-
-.skills_python {
-    width: 50%;
-}
-
-.skills_figma {
-    width: 90%;
-}
-
-.skills_sketch {
+.skills_tkinter {
     width: 70%;
 }
 
-.skills_photoshop {
-    width: 60%;
+.skills_seaborn {
+    width: 65%;
+}
+
+.skills_nodejs {
+    width: 90%;
+}
+
+.skills_mongodb {
+    width: 85%;
+}
+
+.skills_jquery {
+    width: 75%;
 }
 
 .skills_close .skills_list {
@@ -596,7 +592,7 @@ j.skills_title {
     column-gap: 1.5rem;
 }
 
-.q_title {
+.q_data .q_title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }

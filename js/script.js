@@ -43,25 +43,6 @@ skillsHeader.forEach((el) => {
     console.log(el)
 });
 
-// QUALIFICATION SECTION
-
-const tabs = document.querySelectorAll('[data-target]')
-const tabContents = document.querySelectorAll('[data-content]')
-
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.target)
-
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('q_active')
-        })
-        target.classList.add('q_active')
-        tab.forEach(tab => {
-            tab.classList.remove('q_active')
-        })
-        tab.classList.add('q_active')
-    })
-})
 
 // SERVICES SECTION 
 
